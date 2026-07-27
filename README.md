@@ -1,3 +1,41 @@
+terraform-project/
+├── terragrunt.hcl          ← ROOT (shared backend config)
+├── modules/
+│   └── vpc/
+│       ├── main.tf         ← VPC module code
+│       ├── variables.tf
+│       └── outputs.tf
+└── live/
+    ├── terragrunt.hcl      ← live config
+    ├── dev/
+    │   └── vpc/
+    │       └── terragrunt.hcl
+    ├── staging/
+    │   └── vpc/
+    │       └── terragrunt.hcl
+    └── production/
+        └── vpc/
+            └── terragrunt.hcl
+
+            Use plain Terraform when:
+──────────────────────────
+When to use Terragrunt:
+
+✅ Small project
+✅ Single environment
+✅ Learning Terraform
+✅ Simple infrastructure
+
+Use Terragrunt when:
+─────────────────────
+✅ Multiple environments
+✅ Large teams
+✅ Lots of modules
+✅ Don't want code duplication
+✅ Production-grade infrastructure
+
+
+
 Terragrunt is not a replacement for Terraform it is a wrapper around Terraform (and OpenTofu) that helps you manage large,
 multi-environment infrastructure with less duplication and better organization.
 
