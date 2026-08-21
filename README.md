@@ -327,6 +327,7 @@ terragrunt.hcl
 
 Each environment contains only the values that differ.
 *****************************
+```text
 When Should You Use Terragrunt?
 
 It's especially useful when you have:
@@ -339,4 +340,4 @@ Module dependencies
 Large teams managing infrastructure
 
 For a small project with just one or two modules, plain Terraform is usually sufficient.
-
+```
