@@ -1,3 +1,4 @@
+```text
 terraform-project/
 ├── terragrunt.hcl          ← ROOT (shared backend config)
 ├── modules/
@@ -18,9 +19,6 @@ terraform-project/
             └── terragrunt.hcl
 
             Use plain Terraform when:
-──────────────────────────
-When to use Terragrunt:
-
 ✅ Small project
 ✅ Single environment
 ✅ Learning Terraform
@@ -33,9 +31,9 @@ Use Terragrunt when:
 ✅ Lots of modules
 ✅ Don't want code duplication
 ✅ Production-grade infrastructure
+```
 
-
-
+```text
 Terragrunt is not a replacement for Terraform it is a wrapper around Terraform (and OpenTofu) that helps you manage large,
 multi-environment infrastructure with less duplication and better organization.
 
@@ -147,6 +145,7 @@ inputs = {
 }
 
 The Terraform code is identical; only the inputs change.
+```
 ******************************************
 Benefits of Terragrunt
 1. DRY (Don't Repeat Yourself)
